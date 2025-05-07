@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tsholofelo Hope Motsamai | Front-End Developer</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- AOS Animation CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <!-- Custom Styles -->
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+    }
+    h1 span {
+      text-shadow: 2px 2px 5px rgba(128, 90, 213, 0.5);
+    }
+    .project-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
+    }
+    #backToTop {
+      display: none;
+      animation: fadeInUp 0.5s ease forwards;
+    }
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body class="bg-gray-950 text-white font-sans relative">
+
+  <!-- Navigation -->
+  <nav class="fixed w-full bg-gray-900 shadow z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-lg font-bold">Tsholofelo</h1>
+      <div class="space-x-6">
+        <a href="#projects" class="hover:text-purple-400">Projects</a>
+        <a href="#about" class="hover:text-purple-400">About</a>
+        <a href="#skills" class="hover:text-purple-400">Skills</a>
+        <a href="#contact" class="hover:text-purple-400">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="h-screen flex flex-col items-center justify-center text-center px-4" data-aos="fade-up">
+    <h1 class="text-4xl md:text-6xl font-bold mb-4 mt-20">Hi, I'm <span class="text-purple-500">Tsholofelo Hope Motsamai</span></h1>
+    <p class="text-lg md:text-2xl mb-6">Front-End Developer passionate about creating stunning web experiences</p>
+    <a href="#projects" class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg transition">See My Work</a>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-20 px-4 bg-gray-900" data-aos="fade-up">
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">My Projects</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="bg-gray-800 p-6 rounded-lg project-card" data-aos="flip-left">
+        <h3 class="text-xl font-semibold mb-2">Project One</h3>
+        <p class="mb-4">A cool project I built using HTML, CSS, and JavaScript.</p>
+        <a href="#" class="text-purple-400 hover:underline mr-4">Live Demo</a>
+        <a href="#" class="text-purple-400 hover:underline">GitHub</a>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-lg project-card" data-aos="flip-right">
+        <h3 class="text-xl font-semibold mb-2">Project Two</h3>
+        <p class="mb-4">Another awesome app with animations and responsive design.</p>
+        <a href="#" class="text-purple-400 hover:underline mr-4">Live Demo</a>
+        <a href="#" class="text-purple-400 hover:underline">GitHub</a>
+      </div>
+      <!-- Add more project cards if needed -->
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about" class="py-20 px-4 bg-gray-950" data-aos="fade-right">
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">About Me</h2>
+    <div class="max-w-3xl mx-auto text-center">
+      <p class="text-lg leading-relaxed">
+        I’m a passionate front-end developer who loves turning ideas into beautiful, responsive websites. I focus on clean code, smooth animations, and modern design. I'm constantly learning and experimenting to stay ahead in the game.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-20 px-4 bg-gray-900" data-aos="zoom-in">
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">My Skills</h2>
+    <div class="max-w-4xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 text-center">
+      <div class="bg-gray-800 p-4 rounded-lg shadow-md">HTML</div>
+      <div class="bg-gray-800 p-4 rounded-lg shadow-md">CSS</div>
+      <div class="bg-gray-800 p-4 rounded-lg shadow-md">JavaScript</div>
+      <div class="bg-gray-800 p-4 rounded-lg shadow-md">Tailwind CSS</div>
+      <div class="bg-gray-800 p-4 rounded-lg shadow-md">Git</div>
+      <div class="bg-gray-800 p-4 rounded-lg shadow-md">GitHub</div>
+      <div class="bg-gray-800 p-4 rounded-lg shadow-md">Responsive Design</div>
+      <div class="bg-gray-800 p-4 rounded-lg shadow-md">Figma</div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 px-4 bg-gray-950" data-aos="fade-up">
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">Get in Touch</h2>
+    <div class="max-w-xl mx-auto text-center">
+      <p class="mb-6 text-lg">Have a project or just want to say hi? Reach out!</p>
+      <p class="text-purple-400 text-xl font-semibold">motsamaitsholofelo73@gmail.com</p>
+      <div class="mt-6 flex justify-center gap-6">
+        <a href="https://github.com/yourusername" target="_blank" class="hover:text-purple-400">GitHub</a>
+        <a href="https://linkedin.com/in/yourusername" target="_blank" class="hover:text-purple-400">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-center py-6">
+    <p class="text-sm text-gray-400">&copy; 2025 Tsholofelo Hope Motsamai. All rights reserved.</p>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });"
+    class="fixed bottom-6 right-6 bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-full shadow-lg z-50">
+    ↑ Top
+  </button>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+    window.addEventListener("scroll", () => {
+      const btn = document.getElementById("backToTop");
+      if (window.scrollY > 300) {
+        btn.style.display = "block";
+      } else {
+        btn.style.display = "none";
+      }
+    });
+  </script>
+
+</body>
+</html>
